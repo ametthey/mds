@@ -1,0 +1,43 @@
+#mouse-cursor-texte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-family: $basis;
+    font-size: $h5;
+    letter-spacing: normal;
+    color: $bg;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 1;
+    transition: opacity $duration $delay $easing, visibility $duration $delay $easing;
+    font-weight: bold;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &.hidden {
+        opacity: 0!important;
+        visibility: hidden!important;
+        pointer-events: none!important;
+    }
+
+    @include respond(tablet) {
+        font-size: $h4;
+        top: 30%;
+        left: 50%;
+        transform: translate( -50%, -50% )!important;
+        position: absolute;
+        transition: $transition;
+    }
+}

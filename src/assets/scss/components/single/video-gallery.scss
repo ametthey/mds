@@ -1,0 +1,163 @@
+/*
+==========================================================================
+Gallery
+==========================================================================
+ */
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+#container-gallery-video {
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    position: absolute;
+    z-index: 100000;
+    background-color: $color;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transition;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        .container-gallery-video-element {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .gallery-title,
+        .glide__arrow,
+        .container-gallery-video-button-close {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+}
+
+.gallery-title,
+.glide__arrow,
+.container-gallery-video-button-close {
+    transition: $transitionDelay;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+// container glidejs
+.container-gallery-video-element {
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transitionDelay;
+}
+
+.gallery-title {
+    color: $bg;
+    bottom: $r2;
+    left: 50%;
+    transform: translate( -50%, 0% );
+    position: absolute;
+    font-size: $h4;
+
+    @include respond(tablet) {
+        top: $r5;
+    }
+
+    @include respond(mobile) {
+        top: calc( 8px * 5 );
+        left: 0;
+        transform: translate(0,0);
+        margin-left: $r2;
+        width: 60%;
+    }
+}
+
+// sous container glidejs
+.glide__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $r 0;
+}
+
+// précédent et suivant
+.glide__arrows {
+    z-index: 1000;
+    top: unset;
+    bottom: $r2;
+    left: 50%;
+    transform: translate( -50%, 0% );
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tablet) {
+        top: unset;
+        bottom: $r5;
+    }
+
+    button {
+        color: $bg;
+        margin: $r2;
+        cursor: pointer;
+    }
+}
+
+.glide__arrow--left,
+.glide__arrow--right,
+.glide__arrow--close {
+    -webkit-tap-highlight-color: transparent;
+    text-transform: uppercase;
+    color: $bg !important;
+    font-family: $basis;
+    font-size: $smaller;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+// image
+.glide-image {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+
+    @include respond(tablet) {
+        width: 95%;
+        height: 95%;
+    }
+}
+
+.container-gallery-video-button-close {
+    font-family: $basis;
+    font-size: $smaller;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: $r2;
+    right: $r2;
+    cursor: pointer;
+    color: $bg;
+    letter-spacing: normal;
+
+    @include respond(tablet) {
+        top: $r6;
+        // top: unset;
+    }
+
+    @include respond(mobile) {
+        top: $r6;
+    }
+}

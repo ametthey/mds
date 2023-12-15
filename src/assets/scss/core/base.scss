@@ -1,0 +1,124 @@
+/****************************************************
+ * BASE
+ * *************************************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    & :before {
+        box-sizing: border-box;
+    }
+
+    & :after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100vh; /* fallback for Js load */
+    height: var(--doc-height);
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --doc-height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh; /* fallback for Js load */
+    height: var(--doc-height);
+    margin: 0;
+    padding: 0;
+    background-color: $blanc;
+    color: $bleu1;
+    overflow: hidden; /* ou overflow: scroll; */
+    font-family: 'Montserrat', sans-serif;
+    width: calc( 100vw - #{$r4} );
+    margin: 0 $r2;
+}
+
+#container {
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    scrollbar-width: none;
+}
+
+.main-container {
+    // overflow: auto;
+    height: auto;
+    // width: 100vw;
+    width: calc( 100vw - #{$r4} );
+    position: relative;
+}
+
+.container-full {
+    // overflow: auto;
+    height: 100vh;
+    height: var(--doc-height);
+    width: 100vw;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#grid {
+    display: grid;
+    gap: $r2;
+    grid-template-columns: repeat(12, 1fr);
+    .grid-item {
+        background-color: red;
+    }
+    height: 100%;
+    margin: $r2;
+    opacity:0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc( 100% - #{$r4} );
+    overflow: hidden;
+
+    &.--hiden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+#grid-box {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    right: 0;
+    transform: translate( -50%, 0% );
+    background-color: $bleu1;
+    padding: $r4;
+    display: grid;
+    place-items: center;
+
+    span {
+        cursor: pointer;
+        font-family: $gab;
+        color: $blanc;
+        &.hide {
+
+            display: none;
+        }
+
+        &.grid-hide {
+        }
+    }
+}

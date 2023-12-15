@@ -1,0 +1,21 @@
+#location {
+    .container-colored-info {
+        width: 60%;
+
+        @include respond(tablet) {
+            width: 100%;
+        }
+
+        p {
+            max-width: 100%;
+        }
+    }
+
+    .location-image {
+        width: 65%;
+
+        @include respond(tablet) {
+            width: 100%;
+        }
+    }
+}

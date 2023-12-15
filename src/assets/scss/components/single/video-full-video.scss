@@ -1,0 +1,82 @@
+/*
+==========================================================================
+FULL VIDEO
+==========================================================================
+ */
+
+#container-full-video {
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    position: absolute;
+    z-index: 100000;
+    background-color: $color;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transition;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        .plyr {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+
+    .plyr {
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        position: absolute;
+    }
+}
+
+.container-full-button-close {
+    font-family: $basis;
+    font-size: $smaller;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: $r2;
+    right: $r2;
+    cursor: pointer;
+    color: $bg;
+    letter-spacing: normal;
+
+    @include respond(tablet) {
+        // bottom: $r6;
+        // top: unset;
+    }
+}
+
+.plyr {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transition;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.presentation-play-full-video-button {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    position: absolute;
+    cursor: pointer;
+    font-family: $basis;
+    font-size: $h4;
+}

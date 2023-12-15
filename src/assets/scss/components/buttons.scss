@@ -1,0 +1,30 @@
+.button-classic {
+    background-color: $vert;
+    display: grid;
+    font-family: $montmed;
+    place-items: center;
+    width: fit-content;
+
+    span {
+        color: $bleu1;
+        font-family: $montbold;
+        letter-spacing: 0.5px;
+
+    }
+}
+
+.button-classic-small {
+    padding: $r $r2;
+
+    span {
+        font-size: $p;
+    }
+}
+
+.button-classic-normal {
+    padding: $r2 $r5;
+
+    span {
+        font-size: $h5;
+    }
+}

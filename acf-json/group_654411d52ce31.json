@@ -1,0 +1,144 @@
+{
+    "key": "group_654411d52ce31",
+    "title": "Config Operator & Steadicam Champ",
+    "fields": [
+        {
+            "key": "field_654411d532a79",
+            "label": "Texte Pour décrire la page  Operator & Steadicam",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_654411d532a83",
+            "label": "Texte descriptif pour la page Operator & Steadicam",
+            "name": "texte_descriptif_pour_la_page_operator_&_steadicam",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "phrase-accroche",
+                "id": "h2"
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 6,
+            "collapsed": "",
+            "button_label": "Ajouter une phrase",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_654411d53b8e6",
+                    "label": "",
+                    "name": "phrase",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_654411d532a83"
+                }
+            ]
+        },
+        {
+            "key": "field_654411d532a8b",
+            "label": "Vidéos des catégories",
+            "name": "videos_des_categories",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "h2"
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_654411d543916",
+                    "label": "Operator & Steadicam",
+                    "name": "steadicam",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": "h3"
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_654411d545985",
+                            "label": "Vidéo MP4",
+                            "name": "video_mp4",
+                            "aria-label": "",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": "h4"
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-operator-stedicam"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698960391
+}

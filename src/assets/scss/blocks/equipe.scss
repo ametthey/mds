@@ -1,0 +1,152 @@
+.container-role-team {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: $r4 $r4;
+    margin-top: $r6;
+    // width: 80%;
+
+    &.container-role-team-presentation {
+        justify-items: start;
+        grid-template-columns: repeat(4, max-content);
+        align-content: start;
+
+        @include respond(tablet) {
+            grid-template-columns: repeat(2, max-content);
+        }
+
+        @include respond(mobile) {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+
+    @include respond(tablet) {
+        grid-template-columns: 1fr;
+        gap: $r4 0;
+        flex-direction: column;
+    }
+}
+
+.container-role {
+    display: flex;
+    gap: $r;
+    // width: calc( 100% / 3 );
+
+    @include respond(tablet) {
+        width: 100%;
+    }
+
+    @include respond(mobile) {
+        flex-direction: column;
+    }
+
+    &.container-role-alternative {
+        // flex-direction: column;
+        // width: 20%;
+
+        @include respond(tablet) {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+}
+.container-role-alternative {
+    flex-direction: column;
+
+    .role-photo {
+        height: 200px;
+        width: 200px;
+
+        @include respond(tablet) {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .role-infos {
+    .role-name-title {
+        .role-title {
+            margin-top: $rss;
+
+        }
+    }
+    }
+
+}
+
+.role-photo {
+    height: 125px;
+    width: 125px;
+    border-radius: 4px;
+    overflow: hidden;
+    // display: none;
+
+    img {
+        overflow: auto;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.role-photo-item {
+    height: 175px;
+    width: 175px;
+    border-radius: 4px;
+    // overflow: hidden;
+
+    @include respond(tablet) {
+        height: 200px;
+        width: 200px;
+    }
+
+    @include respond(mobile) {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.role-infos {
+    display: flex;
+    flex-direction: column;
+    gap: $r2 $r2;
+
+    @include respond(tablet) {
+        gap: $r $r2;
+    }
+}
+
+.role-name-title {
+    align-self: start;
+}
+
+.role-title {
+    margin-top: $rss;
+    & > * {
+        margin-bottom: 0;
+        // text-transform: uppercase;
+    }
+}
+.role-name {
+    h4 {
+        font-family: $montmed;
+        margin-bottom: 0;
+    }
+    p {
+        line-height: 1.3;
+        &:first-child {
+            font-family: $montreg;
+        }
+
+        &:last-child {
+        }
+    }
+    a {
+        padding-top: $r;
+        display: block;
+        position: relative;
+        font-family: $montlight;
+    }
+}

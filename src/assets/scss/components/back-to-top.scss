@@ -1,0 +1,26 @@
+.footer-back-to-top {
+    position: absolute;
+    bottom: 305px;
+    right: $r8;
+    width: auto;
+    height: auto;
+    z-index: 998;
+    display: flex;
+    justify-content: flex-end;
+    padding: calc( 8px * 2 );
+    align-items: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    cursor: pointer;
+    transition: all .325s ease;
+    letter-spacing: normal;
+    transform: scale(3);
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+

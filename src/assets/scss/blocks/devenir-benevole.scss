@@ -1,0 +1,28 @@
+.container-devenir-benevole {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    max-width: 800px;
+
+    @include respond(tablet) {
+        flex-direction: column;
+    }
+
+    .devenir-benevole-infos {
+        flex: 0 1 auto;
+        width: 85%;
+        // flex-grow: 1;
+        h3 {
+            display: inline-block;
+
+            .titleLine {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+        }
+        p {
+            max-width: 95%;
+        }
+    }
+}

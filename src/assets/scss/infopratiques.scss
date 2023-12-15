@@ -1,0 +1,57 @@
+// ABSTRACT
+@import 'abstract/mixins';
+@import 'abstract/variables';
+// CORE
+@import 'core/reset';
+@import 'core/fonts';
+@import 'core/typography';
+@import 'core/wordpress';
+@import 'core/base';
+@import 'core/error';
+// COMPONENTS
+@import 'components/buttons';
+@import 'components/back-to-top';
+@import 'components/panels';
+@import 'components/button';
+// LAYOUT
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/titles';
+@import 'layout/components';
+// BLOCKS
+@import 'blocks/newsletter';
+@import 'blocks/devenir-benevole';
+// PAGES
+@import 'pages/location';
+
+@import 'vendors/booking-calendar';
+
+
+
+
+.pratiques-horaires {
+    display: flex;
+    gap: $r4;
+
+    @include respond(tablet) {
+        flex-direction: column;
+    }
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+    iframe {
+
+        .map-responsive iframe {
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position: absolute;
+        }
+    }
+}

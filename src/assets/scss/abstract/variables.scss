@@ -1,0 +1,145 @@
+// Colors
+// $jaune: #F2CB52;
+// $bleu1: #233C64;
+// $bleu2: #18263d;
+// $vert: #B6CB3B;
+// $vert2: #005B41;
+$blanc: #faf8d8;
+$jaune: #FFC436;
+// $jaune: red;
+$jaune2: #FFF0CE;
+$bleu1: #0C356A;
+$bleu2: #0174BE;
+// $vert: #539165;
+$vert: #00924c;
+$vert2: #24A19C;
+
+$bg: #000;
+$color: $bleu1;
+
+// Typography
+$gab: 'Gabriel Sans';
+$mont: 'Montserrat', sans-serif;
+$montmed: 'Montserrat Medium';
+$montsemibold: 'Montserrat Semi Bold';
+$montbold: 'Montserrat Bold';
+$montthin: 'Montserrat Thin', sans-serif;
+$montlight: 'Montserrat Light', sans-serif;
+$montreg: 'Montserrat Regular', sans-serif;
+
+$basis: 'Basis Grotesque';
+$canela: 'Canela Thin';
+$canelaItalic: 'Canela Thin Italic';
+$canelaLight: 'Canela Light';
+$canelaLightItalic: 'Canela Light Italic';
+
+// Sizes
+// Typescale 1.250 Major Third
+// $h1: 3.052rem; //90.44px
+// $h1: 39px;
+$h1: 4.209rem;
+$h2: 3.157rem;
+$h3: 2.369rem;
+$h4: 1.777rem;
+$h5: 1.333rem;
+// $h2: 2.241rem; //63.96px
+$h3: 1.953rem; //45.23px
+$h4: 1.563rem; //31.99px
+$h5: 1.25rem;  //22.62px
+$h6: 1.15rem;
+$p: 1rem;
+$small: 0.875rem; //11.32px
+$smaller: 0.75rem; //10.4px
+$lh: 1.3;
+
+
+$m: 80px;
+$m2: calc( #{$m} * 2 );
+$m3: calc( #{$m} * 3 );
+$m4: calc( #{$m} * 4 );
+
+$rm: -8px;
+$rss: 2px;
+$rs: 6px;
+$r: 8px;
+$r2: calc( #{$r} * 2 );
+$r2-5: calc( #{$r * 2.5} );
+$r3: calc( #{$r} * 3 );
+$r4: calc( #{$r} * 4 );
+$r5: calc( #{$r} * 5 );
+$r6: calc( #{$r} * 6 );
+$r7: calc( #{$r} * 7 );
+$r8: calc( #{$r} * 8 );
+$r9: calc( #{$r} * 9 );
+$r10: calc( #{$r} * 10 );
+$r11: calc( #{$r} * 11 );
+$r12: calc( #{$r} * 12 );
+$r13: calc( #{$r} * 13 );
+$r14: calc( #{$r} * 14 );
+$r15: calc( #{$r} * 15 );
+$r16: calc( #{$r} * 16 );
+$r17: calc( #{$r} * 17 );
+$r18: calc( #{$r} * 18 );
+$r19: calc( #{$r} * 19 );
+$r20: calc( #{$r} * 20 );
+$r21: calc( #{$r} * 21 );
+$r22: calc( #{$r} * 22 );
+$r23: calc( #{$r} * 23 );
+$r24: calc( #{$r} * 24 );
+$r25: calc( #{$r} * 25 );
+$r26: calc( #{$r} * 26 );
+$r27: calc( #{$r} * 27 );
+$r28: calc( #{$r} * 28 );
+$r29: calc( #{$r} * 29 );
+$r30: calc( #{$r} * 30 );
+
+
+$p1: 8.33333%;
+$p2: 16.66667%;
+$p3: 25%;
+$p4: 33.33333%;
+$p5: 41.66667%;
+$p6: 50%;
+$p7: 58.33333%;
+$p8: 66.66667%;
+$p9: 75%;
+$p10: 83.33333%;
+$p11: 91.66667%;
+$p12: 100%;
+
+$w1: calc(8.33333% + 16px);
+$w2: calc(16.66667% + 16px);
+$w3: calc(25% + 16px);
+$w4: calc(33.33333% + 16px);
+$w5: calc(41.66667% + 16px);
+$w6: calc(50% + 16px);
+$w7: calc(58.33333% + 16px);
+$w8: calc(66.66667% + 16px);
+$w9: calc(75% + 16px);
+$w10: calc(83.33333% + 16px);
+$w11: calc(91.66667% + 16px);
+$w12: calc(100% + 16px);
+
+// Animations / Transitions
+$duration: 0.45s;
+$duration2: 0.6s;
+$duration3: 1s;
+$duration4: 0.25s;
+$duration5: 0.8s;
+$duration6: 0.325s;
+$delay: 0.0s;
+$delay3: 0s;
+$easing: ease-in-out;
+$easing2: ease-out;
+$easing3: cubic-bezier(0.5, 1, 0.89, 1);
+$easing4: ease-in;
+$easing5: cubic-bezier(0.65, 0, 0.35, 1);
+$easing6: ease;
+
+$transition: all $duration $delay $easing;
+$transitionDelay: all $duration 0.75s $easing;
+$transition2: all $duration2 $delay $easing2;
+$transition3: all $duration3 $delay3 $easing3;
+$transition4: all $duration4 $easing4;
+$transition5: all $duration5 $easing5;
+$transition6: all $duration6 $easing6;

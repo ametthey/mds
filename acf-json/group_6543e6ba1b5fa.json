@@ -1,0 +1,144 @@
+{
+    "key": "group_6543e6ba1b5fa",
+    "title": "Page d'accueil Champ",
+    "fields": [
+        {
+            "key": "field_644cf26c12082",
+            "label": "PAGE D'ACCUEIL",
+            "name": "page_daccueil",
+            "aria-label": "",
+            "type": "separator",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "acf_title"
+            },
+            "display_title": 1
+        },
+        {
+            "key": "field_644cf26c120ef",
+            "label": "Vidéo de fond",
+            "name": "video_de_fond",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": "h2"
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_644cf26c3ee76",
+                    "label": "Vidéo MP4",
+                    "name": "video_mp4",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": "h4"
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_644cf26c120a7",
+            "label": "Phrase d'accroche",
+            "name": "phrase_daccroche",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "phrase-accroche",
+                "id": "h2"
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 4,
+            "collapsed": "",
+            "button_label": "Ajouter une phrase",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_644cf26c16fdd",
+                    "label": "",
+                    "name": "phrase",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_644cf26c120a7"
+                }
+            ]
+        },
+        {
+            "key": "field_644cf26c120bc",
+            "label": "Lien Youtube du Showreel",
+            "name": "add_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Voila un URL Youtube classique\r\n<br>\r\nyoutube.com\/YzVv2tkmD9U\r\n<br>\r\nIl faut insérer uniquement la 2ème partie de l'URL uniquement\r\n<br>\r\n<b>YzVv2tkmD9U<\/b>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": "h2"
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "https:\/\/www.youtube.com\/",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-page-home"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698955889
+}

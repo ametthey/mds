@@ -1,0 +1,88 @@
+{
+    "key": "group_6543f07533f4a",
+    "title": "Config Photo Exploration Champ",
+    "fields": [
+        {
+            "key": "field_6543f19cd9f06",
+            "label": "Texte Pour décrire la page Photo Exploration",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_644d20bb41a28",
+            "label": "Texte descriptif pour la page Photo Exploration",
+            "name": "texte_descriptif_pour_la_page_photo_exploration",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "phrase-accroche",
+                "id": "h2"
+            },
+            "layout": "",
+            "pagination": 0,
+            "min": 0,
+            "max": 4,
+            "collapsed": "",
+            "button_label": "Ajouter une phrase",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_644d20bb41a29",
+                    "label": "",
+                    "name": "phrase",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_644d20bb41a28"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-photo-exploration"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698951657
+}

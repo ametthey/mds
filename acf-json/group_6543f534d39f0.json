@@ -1,0 +1,149 @@
+{
+    "key": "group_6543f534d39f0",
+    "title": "Mise en forme",
+    "fields": [
+        {
+            "key": "field_6543f534d80a9",
+            "label": "CHOIX DU DESIGN SUR LES COLONNES DES PROJETS",
+            "name": "choix_du_design_sur_les_colonnes_des_projets",
+            "aria-label": "",
+            "type": "separator",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "acf_title"
+            },
+            "display_title": ""
+        },
+        {
+            "key": "field_6543f534d80b1",
+            "label": "Réglages des colonnes des galeries",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "h2"
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6543f534d80bb",
+            "label": "Choix des colonnes pour la page Ex Jr DoP",
+            "name": "choix_des_colonnes_cine",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Choisit le nombre de colonnes pour la galerie de présentation de la page Ex Jr DoP",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "4 colonnes": "4 colonnes",
+                "3 colonnes": "3 colonnes",
+                "2 colonnes": "2 colonnes"
+            },
+            "default_value": "3 colonnes",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_6543f534d80c4",
+            "label": "Choix des colonnes pour la page Operator & Steadicam",
+            "name": "choix_des_colonnes_steadi",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Choisit le nombre de colonnes pour la galerie de présentation de la page Operator & Steadicam",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "4 colonnes": "4 colonnes",
+                "3 colonnes": "3 colonnes",
+                "2 colonnes": "2 colonnes"
+            },
+            "default_value": "3 colonnes",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_6543f534d80cc",
+            "label": "Choix des colonnes pour la page Photo Exporation",
+            "name": "choix_des_colonnes_photo",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Choisit le nombre de colonnes pour la galerie de présentation de la page Photo Exploration",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "4 colonnes": "4 colonnes",
+                "3 colonnes": "3 colonnes",
+                "2 colonnes": "2 colonnes"
+            },
+            "default_value": "3 colonnes",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_6543f834ec7bf",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Choisir la disposition des projets avec 2,3,4 ou 5 colonnes\r\n(voir dans le dashboard pour des exemples)",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-design"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698953665
+}

@@ -1,0 +1,51 @@
+.faded {
+    opacity: 0 !important;
+}
+
+/*
+==========================================================================
+FOR SHOWREEL BUTTON AND SINGLE WATCH THE VIDEO AND REELS
+==========================================================================
+ */
+
+    .container-player-button-all {
+        z-index: 998;
+    }
+    .player-button-wrapper {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .player-button-container {
+        position: relative;
+    }
+    .player-button-underline {
+        position: absolute;
+        top: 23px;
+        left: -57px;
+        pointer-events: none;
+        fill: none;
+        stroke: $bg;
+        stroke-width: 1px;
+
+        path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            transition: $transition5;
+
+            @include respond(tablet) {
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+
+    .player-button {
+        color: $bg;
+        font-family: $canela;
+
+        @include respond(tablet) {
+            letter-spacing: 1.5px;
+            font-size: $p;
+        }
+    }

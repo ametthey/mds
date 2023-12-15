@@ -1,0 +1,94 @@
+.button {
+    cursor: pointer;
+    display: grid;
+    // font-family: $montmed;
+    font-family: $montmed;
+    place-items: center;
+    text-align: center;
+    width: fit-content;
+    // text-transform: uppercase;
+    padding: $r $r2;
+    border-radius: 4px;
+    margin: $r2 0;
+    background-color: $color;
+
+    &:hover {
+        filter: brightness(120%);
+    }
+
+    &.button-m {
+        font-size: $h5;
+    }
+
+    &.button-m {
+        span {
+            font-size: $h5;
+        }
+    }
+
+    &.button-l {
+        span {
+            font-size: $h3;
+        }
+    }
+
+    &.button-xl {
+        span {
+            font-size: $h2;
+        }
+    }
+
+    &.button-vert {
+        background-color: $vert;
+
+        span {
+            color: $blanc;
+        }
+    }
+
+    &.button-bleu {
+        background-color: $bleu1;
+
+        span {
+            color: $blanc;
+        }
+    }
+
+    &.button-vert-2 {
+        background-color: $vert2;
+
+        span {
+            color: $blanc;
+        }
+    }
+
+    &.button-bleu-2 {
+        background-color: $bleu2;
+
+        span {
+            color: $blanc;
+        }
+    }
+
+    &.button-jaune {
+        background-color: $jaune;
+
+        span {
+            color: $bleu1;
+        }
+    }
+
+    &.button-blanc {
+        background-color: $blanc;
+        border: 1px solid $bleu1;
+
+        span {
+            color: $bleu1;
+        }
+    }
+
+    span {
+        color: $blanc;
+        font-size: $p;
+    }
+}

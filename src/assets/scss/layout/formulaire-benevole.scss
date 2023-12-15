@@ -1,0 +1,127 @@
+.wpcf7-form {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-areas:
+        "prenom nom"
+        "email telephone"
+        "objet objet"
+        "message message"
+        "envoi .";
+        gap: $r2;
+        // width: 50%;
+
+        @include respond(mobile) {
+            grid-template-columns: max-content;
+            grid-template-areas:
+                "prenom"
+                "nom"
+                "email"
+                "telephone"
+                "objet"
+                "message"
+                "envoie";
+                // width: 90%;
+        }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        // margin: $r;
+        font-family: $montsemibold;
+        letter-spacing: 0.5px;
+
+        &:nth-of-type(5) {
+            grid-area: objet;
+        }
+
+        &:nth-of-type(6) {
+            grid-area: message;
+        }
+
+        &:nth-of-type(7) {
+            grid-area: envoi;
+        }
+    }
+
+    p {
+        font-family: $montmed;
+        font-size: $h4;
+    }
+
+    span {
+        margin: $r 0;
+        background-color: $jaune;
+        border: 1px solid $jaune;
+        border-radius: 4px;
+            overflow: hidden;
+
+        input {
+            padding: 4px 4px;
+            height: 30px;
+            background-color: $jaune;
+
+            div {
+                color: $vert;
+            }
+        }
+
+        &[data-name="your-message"] {
+            border: none;
+        }
+
+        textarea {
+            background-color: $jaune;
+            border: 1px solid $jaune;
+            border-radius: 4px;
+            width: 390px;
+            background-color: $jaune;
+            padding: 4px 4px;
+
+            &:focus {
+                outline: none !important;
+                border:1px solid $jaune;
+                // box-shadow: 0 0 10px #719ECE;
+            }
+
+            @include respond(mobile) {
+                width: 90%;
+            }
+
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            background-color: $jaune;
+            color: $bleu1;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            background-color: $jaune;
+            color: $bleu1;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            background-color: $jaune;
+            color: $bleu1;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            background-color: $jaune;
+            color: $bleu1;
+        }
+    }
+
+    .wpcf7-submit {
+        background-color: $bleu1;
+        width: max-content;
+        padding: $r2 $r4;
+        color: $blanc;
+        border-radius: 4px;
+        font-family: $montreg;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .wpcf7-not-valid-tip {
+        padding: 4px;
+        background-color: #fff;
+        font-size: 0.74rem;
+        margin: 0;
+    }
+}

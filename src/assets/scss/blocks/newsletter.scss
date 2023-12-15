@@ -1,0 +1,108 @@
+#container-newsletter {
+    background-color: $jaune;
+    display: flex;
+    padding: 120px 0;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: $m 0;
+    align-items: center;
+
+    @include respond(tablet) {
+        padding: $r4 $r2;
+    }
+}
+
+.container-newsletter-title {
+    h1 {
+        color: $bleu1;
+    }
+}
+
+.newsletter-text {
+    margin: 10px 0 0 0;
+    color: $bleu1;
+    font-size: clamp(.85rem,-6.1475rem + 23.672vw,#{$h5});
+
+    @include respond(mobile) {
+        width: 70%;
+    }
+}
+
+#newsletter-form {
+    display: flex;
+    padding: 40px 0 0 0;
+
+    @include respond(tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $r;
+    }
+}
+
+.newsletter-email {
+    background-color: $blanc;
+    height: calc( 45px - 4px );
+    padding: 2px 2px 2px 4px;
+    max-width: 400px;
+    width: calc( 350px - 6px );
+    border-radius: 5px;
+
+    @include respond(tablet) {
+        width: calc( 250px - 6px );
+    }
+
+    input {
+        height: inherit;
+        width: calc(100% - 10px);
+        padding: 0 5px;
+        color: $bleu1;
+        font-family: $montreg;
+
+        div {
+            &:nth-of-type(2) {
+                color: $bleu1;
+            }
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $bleu1;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: $bleu1;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: $bleu1;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: $bleu1;
+        }
+    }
+}
+
+.newsletter-submit-button {
+    margin: 0 0 0 5px;
+    // background-color: hsl(45.38deg 86.02% 63.53%);
+    background-color: $bleu1;
+    color: $blanc;
+    height: 40px;
+    padding: $r $r2;
+    border-radius: 3px;
+    opacity: 1;
+    transition: background-color .0325s ease-in-out;
+    font-family: $montmed;
+
+    @include respond(tablet) {
+        margin: 0 0 0 0;
+    }
+
+
+    &:hover {
+        // background-color: hsl(45.38deg 86.02% 50%);
+    }
+}
+
+// brevo is hiddin it
+.input--hidden  {
+    display: none;
+}
+

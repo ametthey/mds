@@ -1,0 +1,25 @@
+.container-title-styled {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: auto;
+
+    .big {
+        margin:0;
+        line-height: 75%;
+    }
+
+    .big-line-title {
+        width: 75%;
+        height: 4px;
+        background-color: $jaune;
+
+    }
+    .small-line-title {
+        width: 75%;
+        height: 8px;
+        background-color: $jaune;
+        margin-left: $r4;
+
+    }
+}

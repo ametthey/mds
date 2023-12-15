@@ -1,0 +1,112 @@
+{
+    "key": "group_644cf26c0d23a",
+    "title": "Réseaux Sociaux",
+    "fields": [
+        {
+            "key": "field_644cf26c1219f",
+            "label": "RÉSEAUX SOCIAUX",
+            "name": "reseaux_sociaux",
+            "aria-label": "",
+            "type": "separator",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "acf_title"
+            },
+            "display_title": ""
+        },
+        {
+            "key": "field_644cf26c121b4",
+            "label": "",
+            "name": "ajouter_les_differents_liens_des_reseaux_sociaux",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_644cf26c5cd53",
+                    "label": "Instagram",
+                    "name": "instagram",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "instagram",
+                        "id": "h2"
+                    },
+                    "default_value": "",
+                    "placeholder": "<i class=\"fa-brands fa-instagram\"><\/i>"
+                },
+                {
+                    "key": "field_644cf26c5cd61",
+                    "label": "Youtube",
+                    "name": "youtube",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "youtube",
+                        "id": "h2"
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_644cf26c5cd6a",
+                    "label": "Email",
+                    "name": "email",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "email",
+                        "id": "h2"
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-socials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698953328
+}

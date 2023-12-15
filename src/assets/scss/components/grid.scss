@@ -1,0 +1,17 @@
+#grid {
+    border: $r2 solid blue;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $r;
+    position: absolute;
+    z-index: -100;
+
+    // display: none;
+
+    .grid-item {
+        background-color: #FF0000;
+        opacity: 0.1;
+    }
+}

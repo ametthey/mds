@@ -1,0 +1,29 @@
+/*
+==========================================================================
+COVER
+==========================================================================
+ */
+.container-cover-video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    height: var(--doc-height);
+    width: 100Vw;
+    object-fit: cover;
+    overflow: hidden;
+    transition: $transition;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.visible {
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+}

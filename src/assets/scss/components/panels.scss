@@ -1,0 +1,49 @@
+.container-colored-info {
+    background-color: $bleu1;
+    color: #fff;
+    padding: clamp($r2,-6.1475rem + 23.672vw,$r3);
+    border-radius: 4px;
+    height: max-content;
+    // width: clamp(90%, -6.1475rem + 23.672vw, 300px);
+    width: 300px;
+    @include respond(tablet) {
+        margin-top: $r4;
+    }
+
+    &.--info-medium {
+        width: 60%;
+
+        @include respond(tablet) {
+            width: 80%;
+        }
+
+        @include respond(mobile) {
+            width: 100%;
+        }
+    }
+}
+
+.container-colored-block {
+    margin-bottom: clamp($r2,-6.1475rem + 23.672vw,$r6);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .colored-block-secteur {
+        // text-transform: uppercase;
+        // margin-top: $r;
+        // font-family: $gab;
+    }
+
+    h5,
+    h4 {
+        margin-bottom: 0;
+        color: #fff;
+    }
+
+    & > p {
+        color: #fff;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+#form_id1334057479015 {
+    .wpbc_booking_form_structure {
+        display: flex;
+
+        @include respond(tablet) {
+            flex-direction: column;
+        }
+
+        .wpbc_button_light {
+            background-color: $bleu1 !important;
+            color: $blanc !important;
+
+            &:hover {
+                border: 2px solid $bleu2;
+            }
+        }
+    }
+}
+
+#calendar_booking1 {
+    .datepick-inline {
+        background-color: $bleu1;
+        border: 1px solid $bleu2;
+
+        .datepick-header {
+            color: $blanc;
+        }
+
+        .datepick-title-row  {
+            th {
+                color: $blanc;
+            }
+        }
+
+        .calendar-links {
+            .datepick-prev,
+            .datepick-next {
+                a {
+                    color: $blanc;
+                }
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,129 @@
+#container-programmes {
+    height: auto;
+    width: 100%;
+}
+
+.container-programmes-wrapper {
+    background-color: $bleu1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    padding: clamp($r2,-6.1475rem + 23.672vw,$r10);
+    width: calc( 100vw - 10% );
+    margin: $m2 auto $m2 0;
+
+    @include respond(tablet) {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+}
+
+.container-programmes-title {
+    width: clamp(90%,-6.1475rem + 23.672vw,100%);
+}
+
+.programmes-underline {
+    display: block;
+    height: 4px;
+    background-color: $jaune;
+    width: 75%;
+}
+
+.container-programmes-item {
+    display: flex;
+    width:clamp(100%,-6.1475rem + 23.672vw,85%);
+    @include respond(tablet) {
+        flex-direction: column;
+        margin: 0 0 $r8 0;
+    }
+
+    .container-programmes-photo {
+        width: clamp(85%,-6.1475rem + 23.672vw,calc(45% - 10px));
+        margin: 0 10px 0 0;
+        display: flex;
+        flex-direction: column;
+
+        @include respond(tablet) {
+            margin: 0;
+            margin: 0 0 $r2 0;
+        }
+    }
+
+}
+
+.container-programmes-items {
+    &#container-programmes-items-1 {
+        .container-programmes-photo {
+                @include respond(tablet) {
+                    margin-top: $m;
+                }
+            .container-programmes-line-bottom {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.container-programmes-infos {
+    width: clamp(100%,-6.1475rem + 23.672vw,calc(55% - 10px));
+    margin: 0 0 0 10px;
+
+    @include respond(tablet) {
+        margin: 0;
+    }
+
+    .container-programmes-item-categorie {
+        margin: -2px 0 $r 0;
+
+        span {
+            font-family: $gab;
+            font-size: $smaller;
+            color: $jaune;
+            text-transform: uppercase;
+        }
+    }
+
+    .container-programmes-item-texte {
+        p {
+            color: $blanc;
+            margin-bottom: 10px;
+            width: clamp(100%,-6.1475rem + 23.672vw,80%);
+        }
+
+    }
+}
+
+.programmes-photo-item {
+    @include respond(tablet) {
+        order :2;
+    }
+}
+
+.container-programmes-line-bottom {
+    margin: $m 0 $m;
+    display: block;
+    height: 2px;
+    background-color: $jaune;
+    width: 100%;
+
+    @include respond(tablet) {
+        order: 1;
+        width: 80%;
+        margin: $r5 auto;
+        // display: none;
+    }
+}
+
+.container-programmes-items {
+    &:last-child {
+        .container-programmes-photo {
+            .container-programmes-line-bottom {
+                // display: none;
+            }
+        }
+    }
+
+}

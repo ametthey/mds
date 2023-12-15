@@ -1,0 +1,42 @@
+.full-width-text-hero {
+
+}
+
+.container-fwth-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+    }
+}
+
+.wrapper-fwth-elements {
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    position: absolute;
+}
+
+.container-fwth-elements {
+    top: 50%;
+    left: 0;
+    margin: 0 0 0 $m2;
+    transform: translate( 0%, -50% );
+    position: absolute;
+
+    h2 {
+        margin-bottom: $r2;
+    }
+
+    p {
+        max-width: 400px;
+    }
+}

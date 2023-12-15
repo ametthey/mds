@@ -1,0 +1,251 @@
+// footer {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: flex-end;
+//     position: relative;
+//     padding: $m2 $r2 $r2;
+//     background-color: $jaune;
+// }
+//
+//
+// /*
+// ==========================================================================
+// FOOTEr
+// ==========================================================================
+// */
+//
+// .footer-footer-line {
+//     height: 1px;
+//     width: 100%;
+//     background-color: $bleu1;
+//     margin-bottom: $r2;
+// }
+//
+// .footer-footer {
+//     display: flex;
+//     justify-content: flex-start;
+//     gap: $r2;
+//
+//     span {
+//         font-family: $montbold;
+//         letter-spacing: 0.5px;
+//         font-size: 0.65rem;
+//
+//         a {
+//         font-family: $montbold;
+//             color: $bleu1;
+//         }
+//     }
+// }
+//
+// /*
+// ==========================================================================
+// CONTENT
+// ==========================================================================
+// */
+// .footer-content {
+//     display: grid;
+//     grid-template-areas:
+//         'contact plan social .';
+//     grid-template-columns: repeat(4, 1fr);
+//     margin: 0 0 $r4 0;
+//     height: 100%;
+//     width: 100%;
+//     position: relative;
+// }
+//
+// .footer-content-col {
+//     &.logo {
+//         grid-area: logo;
+//         // .logo {
+//         //     width: 406px;
+//         //     height: 102px;
+//         // }
+//     }
+//     &.contact {
+//         grid-area: contact;
+//         display: flex;
+//         flex-direction: column;
+//         align-self: end;
+//         gap: $r2;
+//     }
+//     &.plan {
+//         grid-area: plan;
+//         // display: flex;
+//         // flex-direction: column;
+//         // gap: $r5;
+//     }
+//     &.social {
+//         grid-area: social;
+//     }
+// }
+//
+// .footer-content-col {
+//     &.social {
+//         display: flex;
+//         flex-direction: column;
+//         align-self: end;
+//         gap: $r;
+//         a {
+//             color: $bleu1;
+//             font-size: $p;
+//
+//             span {
+//                 display: inline-block;
+//                 height:18px;
+//             }
+//
+//             i {
+//                 margin: 0 $rs 0 0;
+//                 vertical-align: middle;
+//             }
+//         }
+//     }
+// }
+// .content-group {
+//     display: flex;
+//     flex-direction: column;
+//     .content-title {
+//         font-family: $gab;
+//         text-transform: uppercase;
+//         font-size: $smaller;
+//     }
+//     .content-link {
+//         color: $bleu1;
+//         font-size: $smaller;
+//         font-family: $montreg;
+//     }
+// }
+//
+// .plan {
+//     p {
+//         font-family: $gab;
+//         // margin-bottom: 0;
+//     }
+//     #menu-header-menu-1 {
+//         list-style-type: none;
+//         display: flex;
+//         flex-direction: column;
+//         gap: $r;
+//         // gap: $r2 $r2;
+//
+//         .menu-item {
+//             a {
+//                 color: $bleu1;
+//                 font-family: $montreg;
+//                 font-size: $smaller;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+footer {
+    background-color: $jaune;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "logo logo logo logo pratiques pratiques actions actions contact contact suivez suivez"
+        "logo logo logo logo part part part part . . mention mention";
+        gap: $r8 $r;
+
+        @include respond(tablet) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "logo"
+            "pratiques"
+            "actions"
+            "contact"
+            "suivez"
+            "part"
+            "mention";
+            gap: $r4;
+        }
+
+
+    a {
+        color: $bleu1;
+        &:hover {
+            color: $bleu1;
+        }
+    }
+    padding: $m $r4;
+
+    @include respond(tablet) {
+        padding: $r4 $r2;
+    }
+}
+
+.footer-logo {
+    grid-area: logo;
+
+    svg {
+        width: 206px;
+        height: 102px;
+
+        @include respond(mobile) {
+            width: 137.333333333px;
+            height: 68px;
+        }
+    }
+}
+
+.footer-infopratiques {
+    grid-area: pratiques;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: start;
+
+    a {
+        margin-top: $r;
+    }
+}
+
+.footer-actions {
+    grid-area: actions;
+    justify-self: start;
+}
+
+.footer-contacter {
+    grid-area: contact;
+    justify-self: start;
+}
+
+.footer-suivez {
+    grid-area: suivez;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: start;
+
+    a {
+        margin-top: $r;
+    }
+}
+
+.footer-partenaires {
+    grid-area: part;
+    justify-self: start;
+
+    p {
+        margin-bottom: $r;
+        font-family: $gab;
+    }
+
+    img {
+        height: 65px;
+        margin-right: $r2;
+    }
+}
+
+.footer-mentions {
+    grid-area:mention;
+    justify-self: start;
+    align-items: center;
+    font-family: $gab;
+}

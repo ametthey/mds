@@ -1,0 +1,69 @@
+.container-divider-line {
+    height: 6px;
+    width: 50vw;
+    background-color: $jaune;
+    margin: $r4 0;
+}
+.container-divider {
+    overflow: auto;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+
+    @include respond(tablet) {
+        overflow: hidden;
+        height: 25vh;
+    }
+}
+
+.small-container-divider {
+    overflow: auto;
+    height: 5vh;
+    width: 100%;
+    position: relative;
+
+    @include respond(tablet) {
+        height: 2vh;
+    }
+}
+
+// CONTAINER
+.container-layout-big {
+    padding: 0 $p1;
+    width: 100%;
+
+    & > p {
+        max-width: 70%;
+
+        @include respond(tablet) {
+            max-width: 90%;
+        }
+    }
+
+    @include respond(tablet) {
+        padding: 0 $r2;
+    }
+
+
+    &.container-grid {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: $r4 $r2;
+    }
+
+    &.container-flex {
+        display: flex;
+
+        @include respond(tablet) {
+            flex-direction: column;
+        }
+
+        &.flex-center {
+            align-self: center;
+            justify-content: center;
+        }
+    }
+
+
+}

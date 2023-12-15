@@ -1,0 +1,211 @@
+/*
+==========================================================================
+SLIDER
+==========================================================================
+ */
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+.container-carousel {
+    width: 100vw;
+    height: 100vh;
+    height: var(--doc-height);
+    position: relative;
+}
+
+#container-slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: $transition;
+    height: 50vh;
+
+    @include respond(tablet) {
+        height: 25vh;
+    }
+}
+
+
+.slider-title,
+.glide__arrow,
+.slider-button-close {
+    transition: $transitionDelay;
+}
+
+// container glidejs
+.container-slider-element {
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: absolute;
+    transition: $transitionDelay;
+}
+
+// sous container glidejs
+.glide__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $r 0;
+}
+
+// précédent et suivant
+.glide__arrows {
+    z-index: 1000;
+    top: unset;
+    bottom: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tablet) {
+        top: unset;
+        // bottom: 20%;
+        bottom: $r5;
+    }
+
+    button {
+        color: $bg;
+        margin: $r $r2;
+        cursor: pointer;
+    }
+}
+
+.glide__arrow--left,
+.glide__arrow--right,
+.glide__arrow--close {
+    -webkit-tap-highlight-color: transparent;
+    text-transform: uppercase;
+    color: $color !important;
+    font-family: $basis;
+    font-size: $smaller;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.glide__arrow {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+// image
+.glide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @include respond(tablet) {
+        width: 95%;
+        height: 95%;
+    }
+}
+
+// bouton close
+.slider-button-close {
+    font-family: $basis;
+    font-size: $smaller;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: $r2;
+    right: $r2;
+    cursor: pointer;
+    color: $bg;
+    letter-spacing: normal;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    @include respond(tablet) {
+        top: $r6;
+        // top: unset;
+    }
+}
+
+// count image total et image en cours
+.glide__counter {
+    top: $r2;
+    color: $bg;
+    cursor: pointer;
+    display: flex;
+    font-family: $basis;
+    font-size: $smaller;
+    font-weight: bold;
+    position: absolute;
+    left: $r2;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transition;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    // display: none;
+
+    & * {
+        color: $bg;
+    }
+}
+
+.slider-title {
+    top: $r5;
+    left: 50%;
+    transform: translate( -50%, 0% );
+    position: absolute;
+    font-size: $h4;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    @include respond(tablet) {
+        bottom: $r5;
+    }
+}
+
+
+/*
+==========================================================================
+ALTERNATIVE HERO
+==========================================================================
+*/
+.glide__slide {
+    .container-layout-hero {
+        background-color: rgb(10 32 141 / 51%);
+    }
+
+    .layout-hero-content {
+        width: 100%;
+        height: 50%;
+        margin: auto 0 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+
+        .layout-hero-texte {
+            display: none;
+        }
+
+        .layout-hero-title {
+            & > * {
+                font-family: $gab;
+                font-size: $h2;
+                text-align: center;
+            }
+        }
+    }
+}
+

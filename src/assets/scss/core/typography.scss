@@ -1,0 +1,159 @@
+body {
+    font-family: $montmed;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: $blanc;
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    font-family: $montmed;
+
+    &:visited {
+        color: $blanc;
+    }
+
+    &:hover {
+        color: $blanc;
+    }
+}
+
+p, h1, h2, h3, h4, h5, span, .smaller {
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    font-size: clamp(0.85rem, -6.1475rem + 23.672vw, 1rem);
+    font-family: $montmed;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: $color;
+}
+
+b {
+    font-family: $montbold;
+}
+
+h1, h2, h3, h4, h5 {
+}
+
+h1 {
+    // benevole font-size: $h1;
+    // font-size: clamp(#{ $h3 }, -6.1475rem + 23.672vw, #{ $h1 });
+    font-size: clamp(1.953rem, 0.1619rem + 4.0940vw, 4rem);
+    font-family: $montsemibold;
+    color: $color;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    margin-bottom: $r4;
+
+    &.big {
+        font-family: $gab;
+        text-transform: uppercase;
+    }
+}
+
+h2 {
+    // benevole font-size: $h2;
+    font-size: clamp(#{ $h4 }, -6.1475rem + 23.672vw, #{ $h2 });
+    font-family: $montsemibold;
+    color: $color;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    margin-bottom: $r2;
+}
+
+h3 {
+    // benevole font-size: $h3;
+    font-size: clamp(#{ $h5 }, -6.1475rem + 23.672vw, #{ $h3 });
+    font-family: $montsemibold;
+    color: $color;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    margin-bottom: $r;
+
+    &.big {
+        font-family: $gab;
+        text-transform: uppercase;
+    }
+
+    &.h3-styled {
+        color: $jaune;
+    }
+}
+
+h4 {
+    // benevole font-size: $h4;
+    font-size: clamp(#{ $h6 }, -6.1475rem + 23.672vw, #{ $h4 });
+    font-family: $montsemibold;
+    color: $color;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    margin-bottom: $r;
+}
+
+h5 {
+    font-size: $h5;
+    font-family: $montsemibold;
+    color: $color;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    margin-bottom: $r;
+}
+
+.smaller {
+    font-size: $smaller;
+}
+
+.mb {
+    margin-bottom: $r3!important;
+}
+
+.nm {
+    margin: 0;
+}
+
+.blanc {
+    color: $blanc;
+}
+
+.jaune {
+    color: $jaune;
+}
+
+.vert {
+    color: $vert;
+}
+
+.bleu {
+    color: $bleu1;
+}
+
+.layout-bg-blanc {
+    background-color: $blanc;
+}
+
+.layout-bg-jaune {
+    background-color: $jaune;
+}
+
+.layout-bg-vert {
+    background-color: $vert;
+}
+
+.layout-bg-vert-2 {
+    background-color: $vert2;
+}
+
+.layout-bg-bleu {
+    background-color: $bleu1;
+}
+
+.layout-bg-bleu-2 {
+    background-color: $bleu2;
+}

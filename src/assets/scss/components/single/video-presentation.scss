@@ -1,0 +1,153 @@
+/*
+==========================================================================
+Presentation
+==========================================================================
+ */
+#container-presentation-video {
+    scrollbar-width: none;
+    margin-left: $r2;
+    margin-right: $r2;
+    position: absolute;
+    width: calc( 100% - #{$r4} );
+    bottom: $r2;
+    // left: $r2;
+    display: flex;
+
+    // if gallery captions
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include respond(tablet) {
+        bottom: unset;
+        height: 100vh;
+        height: var(--doc-height);
+        margin: 0;
+        overflow: auto;
+        padding: 112% $r $r2 $r;
+        position: relative;
+        width: 100%;
+    }
+
+}
+
+.presentation-title-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+
+    @include respond(tablet) {
+        width: 100%;
+    }
+    .presentation-title-the-date {
+        font-family: $basis;
+        font-size: $smaller;
+        margin: 0 0 9px 3px;
+    }
+
+    .presentation-title-the-title {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        @include respond(mobile) {
+            font-size: $h3;
+        }
+
+    }
+
+    .presentation-title-the-category {
+        margin-bottom: $r4;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        font-family: $basis;
+        font-weight: bold;
+        font-size: $smaller;
+        text-transform: uppercase;
+
+        @include respond(tablet) {
+            margin-bottom: $r2;
+        }
+
+    }
+    .presentation-title-the-description {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        margin-bottom: $r2;
+
+        @include respond(vuhd) {
+            max-width: 70%;
+        }
+
+        @include respond(uhd) {
+            max-width: 90%;
+        }
+
+        @include respond(tablet) {
+            max-width: 100%;
+        }
+
+        @include respond(mobile) {
+            max-width: 90%;
+        }
+    }
+}
+
+// Watch the Gallery
+.presentation-buttons-container {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    right: $r2;
+    bottom: $r2;
+    position: absolute;
+    flex-direction: column;
+    gap: $r2;
+    z-index: 200;
+    padding-top: 100px;
+    padding-left: 100px;
+
+    @include respond(tablet) {
+        position: relative;
+        right: unset;
+        bottom: unset;
+        align-items: flex-start;
+        padding: 0;
+        margin: $r4 $r $r 0;
+    }
+}
+
+.presentation-button-gallery {
+    font-family: $basis;
+    font-size: $h5;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    letter-spacing: 0px;
+
+    @include respond(mobile) {
+        font-size: $p;
+    }
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.presentation-gallery-captions {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    img {
+        aspect-ratio: 16 / 9;
+        height: 70px;
+        width: 100%;
+    }
+}
